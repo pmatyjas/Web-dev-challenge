@@ -1,0 +1,35 @@
+.about {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.about__content {
+  width: 40%;
+  height: 400px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  margin-right: 100px;
+}
+
+.about__title {
+}
+
+.about__descriptionione {
+}
+
+.about__button {
+  background-color: $main-color;
+  color: #fff;
+}
+
+.about__image {
+  width: 60%;
+
+  img {
+    width: 100%;
+    height: auto;
+  }
+
+}
