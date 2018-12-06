@@ -2,16 +2,20 @@
 @import '_normalize.scss';
 @import '_header.scss';
 @import '_about.scss';
+@import '_agency-work.scss';
 
 body {
   font-family: $font-lato;
+    max-width: 100vw;
+    overflow-x: hidden;
 }
 .container{
-  width: 1200px;
+  max-width: 1200px;
   margin: 0 auto;
 }
-
-section {
+section.about, section.agency-work{
+  padding-top: 80px;
+  padding-bottom: 80px;
 }
 
 .button {
@@ -35,33 +39,15 @@ button:hover{
   color: $grey-color;
 }
 
-.agency-work{
+.agency-workflow{}
+.agency-workflow__title{}
+
+.workflow__description{}
+.section__title{}
+.agency-workflow__content{}
+.about__button{}
+
+
+.agency-workflow__image{
+
 }
-.agency-work__title{}
-.agency-work__content{}
-.agency-work__details{
-  display: flex;
-}
-.agency-work__icon{
-  width: 80px;
-  height: 80px;
-  border-radius: 50%;
-  background-color: $main-color;
-
-  display: flex;
-  justify-content: center;
-  align-items: center;
-
-  img{
-  }
-}
-.agency-work__subtitle{
-  font-family: $font-lato;
-  font-size: 30px;
-  font-weight: 900;
-  color: $grey-color;
-}
-.agency-work__description{}
-
-
-

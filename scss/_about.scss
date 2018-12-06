@@ -1,8 +1,23 @@
-.about {
+section.about {
   display: flex;
   justify-content: center;
   align-items: center;
+  position: relative;
+
+  &:before {
+    content: '';
+    display: block;
+    width: 50vw;
+    height: 50vw;
+    background-color: $black-color;
+    transform: rotate(45deg);
+    position: absolute;
+    left: 45%;
+    bottom: 5%;
+    z-index: -1;
+  }
 }
+
 
 .about__content {
   width: 40%;
@@ -14,9 +29,12 @@
 }
 
 .about__title {
+
 }
 
-.about__descriptionione {
+.about__descriptionion {
+  color: $grey-color-second;
+  text-align: justify;
 }
 
 .about__button {
