@@ -1,0 +1,77 @@
+.agency-team{
+  background-color: $grey-color-third;
+  text-align: center;
+  padding: 100px 0;
+}
+.agency-team__title{}
+
+.agency-team__content{
+  margin: 100px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.agency-team__arrow {
+  background-color: transparent;
+  border: none;
+  font-size: 80px;
+  color: $black-color
+}
+.arrow-left{}
+.arrow-right{}
+
+.agency-team__member{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.agency-team__photo{
+  width: 250px;
+  height: 250px;
+  border: 15px solid #fff;
+  transform: rotate(45deg);
+  position: relative;
+  overflow: hidden;
+
+  img{
+    width: 150%;
+    top: -20%;
+    left:-20%;
+    position: absolute;
+    transform: rotate(-45deg);
+
+  }
+
+}
+.agency-team__name{
+  text-align: center;
+  padding: 7px;
+  width: 250px;
+  transform: skewX(45deg);
+  background-color: $black-color;
+  color: #fff;
+  p{
+    transform: skewX(-45deg);
+  }
+}
+.agency-team__job-title{
+  text-align: center;
+  padding: 7px;
+  width: 150px;
+  transform: skewX(45deg);
+  background-color: $main-color;
+  color: #fff;
+  p{
+    transform: skewX(-45deg);
+  }
+}
+
+.main-photo{
+  z-index: 1;
+  .agency-team__photo{
+
+    width: 300px;
+    height: 300px;
+
+  }
+}

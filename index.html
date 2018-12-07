@@ -153,78 +153,106 @@
 </section>
 
 <section class='agency-workflow '>
-    <h2 class='agency-workflow__title'></h2>
+    <h2 class='agency-workflow__title section__title'>How we works</h2>
 
     <div class='workflow__description'>
-        <h2 class='section__title'>How we works</h2>
         <div class='agency-workflow__content'>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Earum eligendi enim error ex hic id incidunt non possimus quis ut?Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deleniti dicta doloremque et excepturi ipsum itaque libero nesciunt repellat temporibus voluptatum!</p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Earum eligendi enim error ex hic id incidunt
+                non possimus quis ut?Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deleniti dicta doloremque
+                et excepturi ipsum itaque libero nesciunt repellat temporibus voluptatum!</p>
             <button class='button about__button'>Read more</button>
 
         </div>
-
-        <div class='agency-workflow__image'>
-            <img src="./images/idea-tiny.jpg" alt="idea">
-        </div>
-        <div class='agency-workflow__image'>
-            <img src="./images/design-tiny.jpg" alt="design">
-        </div>
-        <div class='agency-workflow__image'>
-            <img src="./images/output-tiny.jpg" alt="output">
+        <div class='agency-workflow__images'>
+            <div class='agency-workflow__image image__idea'>
+            </div>
+            <div class='agency-workflow__image image__design'>
+            </div>
+            <div class='agency-workflow__image image__output'>
+            </div>
         </div>
 
     </div>
 </section>
 
-<section class='agency-team '>
+<section class='agency-team'>
     <h2 class='section__title agency-team__title'>Our creative team</h2>
 
     <div class="agency-team__content">
-        <button class="agency-team__arrow-left"></button>
+        <button class="agency-team__arrow arrow-left">
+            <
+        </button>
         <div class="agency-team__member">
-            <div class="agency-team__photo"></div>
-            <div class="agency-team__name">John Doe</div>
-            <div class="agency-team__job-title">Photographer</div>
+            <div class="agency-team__photo">
+                <img src="./images/photographer.jpg" alt="photographer">
+            </div>
+            <div class="agency-team__name">
+                <p>John Doe</p>
+            </div>
+            <div class="agency-team__job-title">
+                <p>Photographer</p></div>
+        </div>
+
+        <div class="agency-team__member center-box">
+            <div class="agency-team__photo">
+                <img src="./images/designer.jpg" alt="designer">
+            </div>
+            <div class="agency-team__name">
+                <p>Jimmy Doe</p></div>
+            <div class="agency-team__job-title">
+                <p>Designer</p>
+            </div>
         </div>
 
         <div class="agency-team__member">
-            <div class="agency-team__photo"></div>
-            <div class="agency-team__name">Jimmy Doe</div>
-            <div class="agency-team__job-title">Designer</div>
+            <div class="agency-team__photo">
+                <img src="./images/humanresources.jpg" alt="humanresources">
+            </div>
+            <div class="agency-team__name">
+                <p>Sarah Doe</p></div>
+            <div class="agency-team__job-title">
+                <p>Human Resources
+                </p>
+            </div>
         </div>
-
-        <div class="agency-team__member">
-            <div class="agency-team__photo"></div>
-            <div class="agency-team__name">Sarah Doe</div>
-            <div class="agency-team__job-title">Human Resources</div>
-        </div>
-        <button class="agency-team__arrow-right"></button>
+        <button class="agency-team__arrow arrow-right">
+            >
+        </button>
 
     </div>
 
 
 </section>
-<section class='agency-clients '>
-    <h2 class='section__title agency-clients__title'>What client says</h2>
-
+<section class="agency-clients">
+    <h2 class="agency-clients__title section__title">
+        What client says
+    </h2>
     <div class="agency-clients__content">
-
-        <div class='agency-clients__main-photo'>
-            <!-- img -->
+        <div class="agency-clients__main-photo">
+            <img src="./images/client-photo.jpg" alt="client photo">
         </div>
-
-        <div class='agency-clients__quote'>
-            <span>icon</span>
-            <p class='agency-clients__opinion'>Lorem ipsum dolor sit amet, consectetur adipisicing.</p>
-            <p class='agency-clients__name'>Jinny Show, Company CEO</p>
+        <div class="agency-clients__quote">
+            <span><i class="fas fa-quote-left"></i></span>
+            <p class="agency-clients__opinion">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Amet alias
+                a, voluptate reiciendis vero deleniti. Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                Repellendus, odit.</p>
+            <div class="agency-clients__name">Jimmy Snow, Company CEO</div>
         </div>
-
-
-        <div class='agency-cients__other-opinions'>
-            <div class='agency-clients-photo'></div>
-            <div class='agency-clients-photo'></div>
-            <div class='agency-clients-photo'></div>
-        </div>
+    </div>
+    <div class="agency-clients__other-opinions">
+        <div class="agency-clients__photo"
+             data-quote="Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+             data-name="Arianna Grande, Singer"><img src="./images/photographer.jpg" alt="client-photo"></div>
+        <div class="agency-clients__photo"
+             data-quote="Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur."
+             data-name="John Snow, Actor"><img src="./images/designer.jpg" alt="client-photo"></div>
+        <div class="agency-clients__photo"
+             data-quote="Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
+             data-name="Maria Konopnicka, Chemist"><img src="./images/human-resources.jpg" alt="client-photo"></div>
+        <div class="agency-clients__photo" data-quote="Lorem ipsum dolor sit amet consectetur, adipisicing elit. Amet alias
+            a, voluptate reiciendis vero deleniti. Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+            Repellendus, odit."
+             data-name="Jimmy Snow, Company CEO"><img src="./images/client-photo.jpg" alt="client-photo"></div>
     </div>
 </section>
 

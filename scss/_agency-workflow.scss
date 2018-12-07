@@ -1,0 +1,50 @@
+.agency-workflow{
+  margin: 100px 0;
+}
+.agency-workflow__title{
+  margin: 0 0 50px 150px;
+}
+
+.workflow__description{
+  display: flex;
+  justify-content: space-between;
+}
+.agency-workflow__content{
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  max-width: 25%;
+  margin-left: 150px;
+
+
+  text-align: justify;
+}
+.agency-workflow .about__button{
+  margin-top: 50px;
+}
+
+.agency-workflow__images{
+  max-width: 75%;
+  display: flex;
+
+}
+.agency-workflow__image {
+  height: 300px;
+  min-width: 300px;
+  background-size: cover;
+  background-position: center;
+  transform: skewX(-15deg);
+
+  margin-left: 50px;
+}
+
+.image__idea{
+  background-image: url('../images/idea-tiny.jpg');
+}
+.image__design{
+  background-image: url('../images/design-tiny.jpg');
+}
+.image__output{
+  background-image: url('../images/output-tiny.jpg');
+}
