@@ -5,6 +5,8 @@
 @import '_agency-work.scss';
 @import '_agency-workflow.scss';
 @import '_agency-team.scss';
+@import '_agency-clients.scss';
+@import '_footer.scss';
 
 body {
   font-family: $font-lato;
@@ -15,7 +17,7 @@ body {
   max-width: 1200px;
   margin: 0 auto;
 }
-section.about, section.agency-work{
+section.about, section.agency-work, footer{
   padding-top: 80px;
   padding-bottom: 80px;
 }
@@ -41,83 +43,8 @@ button:hover{
   color: $grey-color;
 }
 
-.agency-clients {
-  height: 700px;
-}
-
-.agency-clients__title {
-  text-align: center;
-  padding: 100px 0 100px 0;
-}
-
-.agency-clients__content {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.agency-clients__main-photo {
-  width: 250px;
-  height: 250px;
-  position: relative;
-  transform: rotate(45deg);
-  overflow: hidden;
-  border: 15px solid #fff;
-
-  img {
-    width: 150%;
-    height: auto;
-    transform: rotate(-45deg);
-    position: absolute;
-    top: -23%;
-    left: -20%;
+@media (max-width: 1000px){
+  .section__title{
+    font-size: 52px;
   }
 }
-
-.agency-clients__quote {
-  margin-left: 50px;
-  height: 200px;
-  width: 50%;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-around;
-  color: $grey-color-second;
-  font-family: $font-lato;
-
-  span {
-    font-size: 50px;
-  }
-}
-
-.agency-clients__opinion {}
-
-.agency-clients__name {
-  font-weight: 900;
-}
-
-.agency-clients__other-opinions {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-
-}
-
-.agency-clients__photo {
-  width: 80px;
-  height: 80px;
-  position: relative;
-  transform: rotate(45deg);
-  overflow: hidden;
-  border: 5px solid #fff;
-  margin-right: 35px;
-
-  img {
-    width: 150%;
-    height: auto;
-    transform: rotate(-45deg);
-    position: absolute;
-    top: -23%;
-    left: -20%;
-  }
-}
-

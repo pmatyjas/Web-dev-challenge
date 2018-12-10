@@ -36,7 +36,7 @@ arrowLeft.addEventListener('click', function () {
     if (index < 0) {
         index = array.length-1
     }
-
+    array[index].classList.add('main-photo');
 
 });
 

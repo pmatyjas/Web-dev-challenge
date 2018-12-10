@@ -4,18 +4,18 @@ section.about {
   align-items: center;
   position: relative;
 
-  &:before {
-    content: '';
-    display: block;
-    width: 50vw;
-    height: 50vw;
-    background-color: $black-color;
-    transform: rotate(45deg);
-    position: absolute;
-    left: 45%;
-    bottom: 20%;
-    z-index: -1;
-  }
+  //&:before {
+  //  content: '';
+  //  display: block;
+  //  width: 50vw;
+  //  height: 50vw;
+  //  background-color: $black-color;
+  //  transform: rotate(45deg);
+  //  position: absolute;
+  //  left: 45%;
+  //  bottom: 20%;
+  //  z-index: -1;
+  //}
 }
 
 
@@ -25,7 +25,7 @@ section.about {
   display: flex;
   flex-direction: column;
   justify-content: space-around;
-  margin-right: 100px;
+  margin: 0 80px;
 }
 
 .about__title {
@@ -50,4 +50,20 @@ section.about {
     height: auto;
   }
 
+}
+
+@media (max-width: 890px){
+  section.about{
+    flex-direction: column;
+
+    width: 100%;
+  }
+  .about__content{
+    width: 100%;
+    align-items: center;
+    p{
+      width: 60%;
+      text-align: center;
+    }
+  }
 }

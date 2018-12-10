@@ -1,0 +1,60 @@
+
+.contact__background{
+  background-image: url("../images/footer-people.jpg");
+  background-size: cover;
+  text-align: center;
+  color: #fff;
+
+}
+h2.contact__title{
+  text-align: center;
+  padding: 90px 0;
+  color: $grey-color-third;
+}
+.contact__content{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 10% 5% 10%;
+}
+.contact__details{
+  width: 33%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  h5{
+    font-size: 18px;
+  }
+
+}
+.contact__icon{
+  margin-right: 20px;
+}
+.contact__data{
+  display: flex;
+  flex-direction: column;
+
+}
+.contact__social-media{
+  display: flex;
+  justify-content: center;
+  list-style: none;
+  li{
+    font-size: 30px;
+    padding: 20px;
+  }
+  a{
+    text-decoration: none;
+    color: #fff;
+  }
+}
+.contact__line{
+  width: 1200px;
+  margin: 0 auto;
+  border-bottom: 2px solid #fff;
+
+}
+.contact__copyright{
+  padding: 50px;
+}
