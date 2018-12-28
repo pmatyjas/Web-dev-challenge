@@ -1,8 +1,10 @@
+
 .main__background {
   width: 100%;
   height: 100vh;
   background-image: url('../images/banner_main.png');
   background-color: $main-color;
+  background-blend-mode: multiply;
   background-size: cover;
   background-position: center;
 }
@@ -91,12 +93,12 @@
 }
 
 .banner__title {
+
   font-family: $font-lemon;
   font-size: 128px;
   text-transform: uppercase;
 
   p {
-
     color: #fff;
     mix-blend-mode: overlay;
     text-shadow: 0 0 24px #231f20;

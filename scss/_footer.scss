@@ -2,6 +2,8 @@
 .contact__background{
   background-image: url("../images/footer-people.jpg");
   background-size: cover;
+  background-blend-mode: multiply;
+  background-color: $grey-color;
   text-align: center;
   color: #fff;
 
@@ -56,5 +58,15 @@ h2.contact__title{
 
 }
 .contact__copyright{
-  padding: 50px;
+  padding: 40px;
+}
+
+@media (max-width: 1000px) {
+  .contact__content{
+    flex-direction: column;
+  }
+  .contact__details{
+    width: 100%;
+    margin: 20px 0 20px 0;
+  }
 }

@@ -1,11 +1,10 @@
 .agency-workflow{
-  margin: 100px 0;
 }
 .agency-workflow__title{
-  margin: 0 0 50px 150px;
+  margin: 0 0 50px 200px;
 }
 
-.workflow__description{
+.agency-workflow__description{
   display: flex;
   justify-content: space-between;
 }
@@ -14,10 +13,8 @@
   flex-direction: column;
   align-items: flex-start;
   justify-content: center;
-  max-width: 25%;
-  margin-left: 150px;
-
-
+  max-width: 20%;
+  margin-left: 200px;
   text-align: justify;
 }
 .agency-workflow .about__button{
@@ -25,19 +22,22 @@
 }
 
 .agency-workflow__images{
-  max-width: 75%;
+  max-width: 80%;
   display: flex;
+  align-items: center;
 
 }
 .agency-workflow__image {
-  height: 300px;
-  min-width: 300px;
+  min-height: 300px;
+  min-width: 280px;
   width: 30%;
   background-size: cover;
   background-position: center;
-  transform: skewX(-15deg);
+  transform: skewX(-25deg);
 
-  margin-left: 50px;
+  margin-left: 80px;
+  background-color: $grey-color-second;
+  background-blend-mode: multiply;
 }
 
 .image__idea{
@@ -48,4 +48,55 @@
 }
 .image__output{
   background-image: url('../images/output-tiny.jpg');
+}
+
+@media (max-width: 1500px) {
+  .agency-workflow__image{
+    margin-left: 30px;
+  }
+  .agency-workflow__title{
+    margin: 0 0 50px 100px;
+  }
+  .agency-workflow__content{
+    margin-left: 100px;
+  }
+}
+
+@media (max-width: 1300px){
+  .agency-workflow__title{
+    text-align: center;
+    margin: 0 0 50px 0;
+  }
+  .agency-workflow__content{
+    margin-left: 0;
+    max-width: 50%;
+    align-items: center;
+    padding-bottom: 40px;
+  }
+  .agency-workflow__description{
+    flex-direction: column;
+    align-items: center;
+  }
+}
+@media (max-width: 1150px){
+  .agency-workflow__image {
+    margin-left: 15px;
+    min-height: 250px;
+    min-width: 200px;
+  }
+}
+@media (max-width: 850px){
+  .agency-workflow__image {
+    min-height: 200px;
+    min-width: 170px;
+  }
+}
+@media (max-width: 650px){
+  .agency-workflow__images{
+    flex-direction: column;
+  }
+  .agency-workflow__image{
+    margin-top: 10px;
+    transform: skewX(-15deg);
+  }
 }
